@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Sufyan Safdar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Sufyan<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <p class="greeting animate-fade">Hello, I'm</p>
+      <h1 class="animate-slide">Muhammad Sufyan Safdar</h1>
+      <h2 class="typed animate-slide" style="animation-delay:0.2s"><span id="typed-text"></span></h2>
+      <p class="sub animate-slide" style="animation-delay:0.4s">BSCS Student at University of Faisalabad</p>
+      <div class="hero-btns animate-slide" style="animation-delay:0.6s">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-img animate-zoom">
+      <div class="avatar-circle">
+        <img src="../Screenshot_20260220_121208.jpg" alt="Muhammad Sufyan Safdar" />
+      </div>
+      <div class="ring ring1"></div>
+      <div class="ring ring2"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-content">
+      <div class="about-img-wrap">
+        <img src="../Screenshot_20260220_121208.jpg" alt="Muhammad Sufyan Safdar" class="about-photo" />
+      </div>
+      <div class="about-text">
+        <p>
+          Hi! I'm <strong>Muhammad Sufyan Safdar</strong>, a passionate
+          <strong>Front-End Web Developer</strong> and a
+          <strong>BSCS student</strong> at the University of Faisalabad.
+        </p>
+        <p>
+          I love building websites using HTML, CSS, and JavaScript. I always
+          strive to create clean, responsive, and user-friendly interfaces
+          that deliver great experiences.
+        </p>
+        <div class="info-grid">
+          <div><i class="fas fa-user"></i> <span>Muhammad Sufyan Safdar</span></div>
+          <div><i class="fas fa-graduation-cap"></i> <span>BSCS - University of Faisalabad</span></div>
+          <div><i class="fas fa-code"></i> <span>Front-End Developer</span></div>
+          <div><i class="fas fa-map-marker-alt"></i> <span>Faisalabad, Pakistan</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+        <span>90%</span>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+        <span>85%</span>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+        <span>75%</span>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive Design</h3>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <span>80%</span>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git & GitHub</h3>
+        <div class="bar"><div class="fill" style="width:65%"></div></div>
+        <span>65%</span>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Basics</h3>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+        <span>70%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-calculator"></i></div>
+        <h3>Accounting Management System</h3>
+        <p>A full-featured accounting app with transaction history, invoice creation, balance sheet, profit & loss, cash flow reports, and account management.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a href="https://muhammadsufyansafdar780-byte.github.io/Accounting-website/" target="_blank" class="btn primary" style="margin-top:1rem;display:inline-block;font-size:0.85rem;padding:0.5rem 1.2rem;">Live Demo <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3>Tax Management System</h3>
+        <p>A smart tax manager with income & tax calculation, expense tracking, filing history, and detailed reports like annual, deductions & year comparison.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a href="https://muhammadsufyansafdar780-byte.github.io/Tax-manager/" target="_blank" class="btn primary" style="margin-top:1rem;display:inline-block;font-size:0.85rem;padding:0.5rem 1.2rem;">Live Demo <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Share Price Tracker</h3>
+        <p>A real-time share & stock price tracking app to monitor market trends, view price changes, and analyze investment data.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a href="https://muhammadsufyansafdar780-byte.github.io/Share-price/" target="_blank" class="btn primary" style="margin-top:1rem;display:inline-block;font-size:0.85rem;padding:0.5rem 1.2rem;">Live Demo <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>muhammadsufyansafdar780@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+92 309-1452442</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Faisalabad, Pakistan</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by <span>Muhammad Sufyan Safdar</span> &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
