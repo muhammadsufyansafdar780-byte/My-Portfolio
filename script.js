@@ -1,6 +1,6 @@
 // ---- Typed.js ----
 new Typed('#typed-text', {
-  strings: ['Front-End Developer', 'HTML & CSS Expert', 'JavaScript Developer', 'UI/UX Enthusiast'],
+  strings: ['Full-Stack Developer', 'MERN Stack Developer', 'React & Node.js Dev', 'REST API Developer'],
   typeSpeed: 60,
   backSpeed: 40,
   backDelay: 1800,
@@ -144,15 +144,42 @@ function animateCounter(el, target) {
   }, 30);
 }
 
+// ---- EmailJS Init ----
+emailjs.init('NYNlmdw2aJaf3zzws');
+
 // ---- Contact form ----
 function sendMessage(e) {
   e.preventDefault();
   const btn = e.target.querySelector('button');
-  btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
-  btn.style.background = '#28a745';
-  setTimeout(() => {
-    btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+  const inputs = e.target.querySelectorAll('input, textarea');
+
+  const templateParams = {
+    from_name:  inputs[0].value,
+    from_email: inputs[1].value,
+    message:    inputs[2].value
+  };
+
+  btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+  btn.disabled = true;
+
+  emailjs.send('service_dddhtn4', 'template_4ejkol8', templateParams)
+    .then(() => {
+      btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
+      btn.style.background = '#28a745';
+      e.target.reset();
+      setTimeout(() => {
+        btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    })
+    .catch(() => {
+      btn.innerHTML = 'Failed! Try Again <i class="fas fa-times"></i>';
+      btn.style.background = '#dc3545';
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+        btn.style.background = '';
+      }, 3000);
+    });
 }
