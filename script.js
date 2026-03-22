@@ -145,7 +145,7 @@ function animateCounter(el, target) {
 }
 
 // ---- EmailJS Init ----
-emailjs.init('NYNlmdw2aJaf3zzws');
+emailjs.init('NYNImdw2aJaf3zzWs');
 
 // ---- Contact form ----
 function sendMessage(e) {
