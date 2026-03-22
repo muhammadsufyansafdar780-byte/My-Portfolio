@@ -154,9 +154,9 @@ function sendMessage(e) {
   const inputs = e.target.querySelectorAll('input, textarea');
 
   const templateParams = {
-    from_name:  inputs[0].value,
-    from_email: inputs[1].value,
-    message:    inputs[2].value
+    name:  inputs[0].value,
+    msg:   inputs[1].value,
+    title: inputs[2].value
   };
 
   btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
